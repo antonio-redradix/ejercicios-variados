@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lightyellow;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    color: black;
+    line-height: 40px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 40px;
+    padding: 5%;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game__photo {
+    align-self: center;
+    width: 200px;
+}
+
+.game__gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+}
