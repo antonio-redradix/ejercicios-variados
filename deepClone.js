@@ -1,17 +1,23 @@
-// the function allows to make a "deep Clone" from an object, it changes the reference and the value of the new object in the memory
+/* the function allows to make a "deep clone" from an object, it changes the reference of the new object in the memory /it is applied to the values too in case to be an object-array */
 
-// CHECK!!
-
-function deepClone(obj){
-    let arrObj = Object.entries(obj);
-    let arrResult = {};
-    arrObj.map((item) => {
-      if(typeof item === 'string'){
-        deepClone(item);
-      }
-      arrResult[item[0]] = item[1];
-    })
-    return arrResult;
+let deepClone = (obj) => {
+    let keys = Object.keys(obj);
+    let values = Object.values(obj);
+    let objClone = values.reduce((obj, elem, index) => {
+      if (Array.isArray(elem)) {
+        let arrClone = [...elem];
+        obj[keys[index]] = arrClone;
+        return obj;
+      } else if (typeof(elem) === 'object') {
+        obj[keys[index]] = deepClone(elem);
+        return obj;
+      } else {
+        obj[keys[index]] = elem;
+        return obj;
+  
+      };
+    },{});
+    return objClone;
   };
   
   let obj = {
@@ -25,5 +31,7 @@ function deepClone(obj){
   let obj2 = deepClone(obj)
   obj.things[1] = 'x'
   obj.peso.unit = 'lbs'
-  console.log(obj);
   console.log(obj2);
+  console.log(obj);
+
+  module.exports = {deepClone};

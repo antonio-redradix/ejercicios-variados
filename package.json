@@ -1,0 +1,22 @@
+{
+  "name": "entregaejerciciosvariados",
+  "version": "1.0.0",
+  "description": "- Cada alumno tiene su propia rama donde subir los ejercicios\r - Los ejercicios están documentados",
+  "main": "chunk.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antonio-redradix/ejercicios-variados.git"
+  },
+  "author": "Jose Luis Aguilar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antonio-redradix/ejercicios-variados/issues"
+  },
+  "homepage": "https://github.com/antonio-redradix/ejercicios-variados#readme",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
+}
