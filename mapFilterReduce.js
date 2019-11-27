@@ -1,40 +1,50 @@
-// map  
-
+// create a new array with the result of divide every element of the original into two
 let arr1 = [8, 12, 20];
+let divideTwo = arr1.map((x) => x/2);
+
+// create a new array with the result of convert every element of the original into an string
 let arr2 = [1, 7, 50];
+let convertToStr = arr2.map((x) => x.toString());
+
+// create a new array with the symbol of the number from the original array
 let arr3 = [-2, 5, 15, -7, -8];
-let arr4 = ['lorem ipsum dolor', 'hello world'];
-let arr5 = [[1, 2], [34, 20], [11, 11]];
-let arr6 = [{name: 'Alberto'}, {name: 'Fran'}];
-let arr7 = [[1, 2], [34, 20, 5], [11], [2, 4]];
-
-console.log(arr1.map((x) => x/2));
-
-console.log(arr2.map((x) => x.toString()));
-
-console.log(arr3.map((x) => {
+let symOfNum = arr3.map((x) => {
   return x > 0? '+':'-';
-}));
+});
 
-console.log(arr4.map((x) => {
+// create a new array which contains the same number of elements transformed into a "string" with the first letter of every word in each element
+let arr4 = ['lorem ipsum dolor', 'hello world'];
+let firstLetterOfWords = arr4.map((x) => {
   let arrStr = x.split(' ');
   let firstLetter = arrStr.map((str) => str.charAt(0));
   return firstLetter.join('');
-}));
+});
 
-console.log(arr5.map((x) => {
+// create a new array which contains the sum of the elements contained in every sub array
+let arr5 = [[1, 2], [34, 20], [11, 11]];
+let sumOfEveryArr = arr5.map((x) => {
   return sumArr = x.reduce((acc,curr) => acc+curr);
-}));
+});
 
-console.log(arr6.map((obj) => obj.name));
+// create a new array with the value of the name key of every object
+let arr6 = [{name: 'Alberto'}, {name: 'Fran'}];
+let getNames = arr6.map((obj) => obj.name);
 
-console.log(arr7.map((x) => {
+// create a new array which contains the sum of the elements contained in every sub array
+let arr7 = [[1, 2], [34, 20, 5], [11], [2, 4]];
+let sumOfEveryArr2 = arr7.map((x) => {
   return sumArr = x.reduce((acc,curr) => acc+curr);
-}));
+});
 
-// filter 
+
+
+//  filter the odd numbers from an array
 
 let arr = [1,2,3,4,5,6,7,8,9,10,11,12,13];
+let oddNum = arr.filter((x) => x % 2 != 0);
+
+
+// filter the objects which contains a property 'important:true'
 
 let people = [
   {
@@ -64,30 +74,32 @@ let people = [
   }
 ];
 
-console.log(arr.filter((x) => x % 2 != 0));
+let vipPeople = people.filter((obj) => obj.important);
 
-console.log(people.filter((obj) => obj.important));
 
-// reduce
-
+// returns the result of substract all the elements of an array
 let arr1 = [100,80,9,3,2];
+let subsArr = arr1.reduce((acc, curr) => acc - curr);
+
+
+// concat all the string from an array
 let str1 = ['S','u','s','a','n'];
+let concatStr = str1.reduce((acc, curr) => acc + curr, '');
+
+// sums all the elements of an array except the negatives
 let arr2 = [1,4,2,33,3,-200,-1,-2,-3];
-
-console.log(arr1.reduce((acc, curr) => acc - curr));
-
-console.log(str1.reduce((acc, curr) => acc + curr),'');
-
-console.log(arr2.reduce((acc,curr) => {
+let sumPositives = arr2.reduce((acc,curr) => {
   if(curr >= 0) {
     return acc + curr;
   }
   return acc;
-},0));
+},0);
 
-console.log(arr2.reduce((acc, curr) => {
+
+// find the max number of an array using reduce
+let maxNum = arr2.reduce((acc, curr) => {
   if(curr > acc){
     acc = curr;
   }
   return acc;
-},-Infinity));
+},-Infinity);
