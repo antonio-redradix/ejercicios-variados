@@ -1,0 +1,34 @@
+body {
+    background-color: rgb(36, 36, 36);
+    font-family: Helvetica;
+    color: white;
+}
+
+h3 {
+    color: white;
+    margin-bottom: 7px;
+}
+
+.textInputContainer {
+    width: 300px;
+    height: 80px;
+    background-color: rgb(75, 75, 75);    
+    box-shadow: 0 0 10px rgb(19, 19, 19);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#textInput {
+    box-shadow: 0 0 10px rgb(19, 19, 19);
+    padding: 6px 10px;
+    border: 2px solid rgb(36, 36, 36);
+    border-radius: 4px;
+}
+
+#inputButton {
+    box-shadow: 0 0 10px rgb(19, 19, 19);
+    padding: 6px 10px;
+    border: 2px solid rgb(36, 36, 36);
+    border-radius: 4px;
+}
