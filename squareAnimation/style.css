@@ -1,0 +1,68 @@
+.block-center{
+    position: relative;
+    margin: 5% auto;
+    background-color: pink;
+    width: 300px;
+    height: 300px;
+}
+
+.box{
+    width: 150px;
+    height: 150px;
+}
+
+#box--red{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: red;
+    animation: red 1.5s ease-in-out infinite alternate;
+    transform-origin: 0% 0%;
+}
+
+#box--yellow{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: yellow;
+    animation: yellow 1.5s ease-in-out infinite alternate;
+    transform-origin: 100% 0%;
+}
+
+#box--blue{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: blue;
+    animation: blue 1.5s ease-in-out infinite alternate;
+    transform-origin: 0% 100%;
+}
+
+#box--green{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: green;
+    animation: green 1.5s ease-in-out infinite alternate;
+    transform-origin: 100% 100%;
+}
+
+@keyframes yellow{
+    from {transform: rotate(0deg);}
+    to {transform: rotate(-90deg);}
+}
+
+@keyframes blue{
+    from {transform: rotate(0deg);}
+    to {transform: rotate(-90deg);}
+}
+
+@keyframes red{
+    from {transform: rotate(0deg);}
+    to {transform: rotate(90deg);}
+}
+
+@keyframes green{
+    from {transform: rotate(0deg);}
+    to {transform: rotate(90deg);}
+}
