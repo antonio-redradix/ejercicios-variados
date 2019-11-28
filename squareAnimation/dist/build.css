@@ -1,0 +1,233 @@
+body {
+  background-color: #474747; }
+
+.sideMenu {
+  background-color: black;
+  box-shadow: 1px 1px 10px #2e2e2e;
+  color: white;
+  font-family: Helvetica; }
+  @media only screen and (max-width: 1200px) {
+    .sideMenu {
+      width: 200px; } }
+  @media only screen and (min-width: 1200px) {
+    .sideMenu {
+      width: 100%; } }
+  .sideMenu--title {
+    text-align: center;
+    letter-spacing: 8px; }
+    @media only screen and (min-width: 1200px) {
+      .sideMenu--title {
+        display: none; } }
+  .sideMenu--option {
+    transition: background-color 0.2s ease;
+    background-color: #252525;
+    border-left: 4px solid #252525;
+    cursor: pointer; }
+    @media only screen and (min-width: 1200px) {
+      .sideMenu--option {
+        display: inline-block;
+        width: 16.04167%; } }
+    @media only screen and (max-width: 1200px) {
+      .sideMenu--option {
+        border-top: 1px solid #0e0e0e; } }
+    .sideMenu--option:hover {
+      background-color: #333333;
+      border-left: 4px solid #4e4e4e; }
+    .sideMenu--option__selected {
+      background-color: #474747;
+      border-left: 4px solid #9ef564; }
+      .sideMenu--option__selected:hover {
+        background-color: #333333;
+        border-left: 4px solid #9ef564; }
+
+.space {
+  height: 30px; }
+
+.inline {
+  display: inline-block; }
+
+.margin {
+  margin-left: 10px; }
+
+/*Ejercicio Calc1*/
+.ejCalc1 {
+  background-color: #cc3c48;
+  box-shadow: 1px 1px 10px #2e2e2e;
+  height: 20px;
+  margin: 0 auto;
+  width: calc(100% - 100px); }
+
+/*--------------------------------------------------*/
+/*Ejercicio Anim1*/
+.ejAnim1 {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  background-color: #5f5f5f;
+  box-shadow: inset 0 0 10px #131313;
+  display: flex;
+  flex-wrap: wrap; }
+
+@keyframes rotateLeft {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(90deg); } }
+
+@keyframes backLeft {
+  0% {
+    transform: rotate(90deg); }
+  100% {
+    transform: rotate(0deg); } }
+
+@keyframes rotateRight {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(-90deg); } }
+
+@keyframes backRight {
+  0% {
+    transform: rotate(-90deg); }
+  100% {
+    transform: rotate(0deg); } }
+
+.ejAnim1:hover > #ejAnim1--box1 {
+  animation-name: rotateLeft;
+  animation-duration: 1s;
+  animation-fill-mode: both; }
+
+.ejAnim1:hover > #ejAnim1--box2 {
+  animation-name: rotateRight;
+  animation-duration: 1s;
+  animation-fill-mode: both; }
+
+.ejAnim1:hover > #ejAnim1--box3 {
+  animation-name: rotateRight;
+  animation-duration: 1s;
+  animation-fill-mode: both; }
+
+.ejAnim1:hover > #ejAnim1--box4 {
+  animation-name: rotateLeft;
+  animation-duration: 1s;
+  animation-fill-mode: both; }
+
+#ejAnim1--box1 {
+  background-color: #ff4d4d;
+  width: 150px;
+  height: 150px;
+  transform-origin: 0% 0%;
+  animation-name: backLeft;
+  animation-duration: 1s;
+  animation-fill-mode: both; }
+
+#ejAnim1--box2 {
+  background-color: #f3ff4d;
+  transform-origin: 100% 0%;
+  width: 150px;
+  height: 150px;
+  animation-name: backRight;
+  animation-duration: 1s;
+  animation-fill-mode: both; }
+
+#ejAnim1--box3 {
+  background-color: #4da0ff;
+  transform-origin: 0% 100%;
+  width: 150px;
+  height: 150px;
+  animation-name: backRight;
+  animation-duration: 1s;
+  animation-fill-mode: both; }
+
+#ejAnim1--box4 {
+  background-color: #7bdb43;
+  transform-origin: 100% 100%;
+  width: 150px;
+  height: 150px;
+  animation-name: backLeft;
+  animation-duration: 1s;
+  animation-fill-mode: both; }
+
+/*--------------------------------------------------*/
+/*Ejercicio Anim2*/
+.ejAnim2 {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  background-color: #5f5f5f;
+  box-shadow: inset 0 0 10px #131313;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+#ejAnim2--box1 {
+  background-color: #ff4d4d;
+  box-shadow: 1px 1px 10px #4e4e4e;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: rotate1;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite; }
+
+@keyframes rotate1 {
+  0% {
+    transform: rotate(0deg);
+    background-color: #ff4d4d; }
+  50% {
+    transform: rotate(180deg);
+    background-color: #824dff; }
+  100% {
+    transform: rotate(360deg);
+    background-color: #ff4d4d; } }
+
+#ejAnim2--box2 {
+  background-color: #6bff4d;
+  box-shadow: 1px 1px 10px #666666;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: rotate2;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite; }
+
+@keyframes rotate2 {
+  0% {
+    transform: rotate(0deg);
+    background-color: #6bff4d; }
+  50% {
+    transform: rotate(-180deg);
+    background-color: #ff4d4d; }
+  100% {
+    transform: rotate(-360deg);
+    background-color: #6bff4d; } }
+
+#ejAnim2--box3 {
+  background-color: #6e4dff;
+  box-shadow: 1px 1px 10px #666666;
+  width: 50px;
+  height: 50px;
+  animation-name: rotate3;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite; }
+
+@keyframes rotate3 {
+  0% {
+    transform: rotate(0deg);
+    background-color: #6e4dff; }
+  50% {
+    transform: rotate(180deg);
+    background-color: #edff4d; }
+  100% {
+    transform: rotate(360deg);
+    background-color: #6e4dff; } }
+
+
+/*# sourceMappingURL=build.css.map*/
