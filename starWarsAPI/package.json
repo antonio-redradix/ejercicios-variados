@@ -1,12 +1,12 @@
 {
-  "name": "pokemonapi",
+  "name": "starwarsapi",
   "version": "1.0.0",
-  "description": "node Server",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Jose Luis Aguilar",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1"
