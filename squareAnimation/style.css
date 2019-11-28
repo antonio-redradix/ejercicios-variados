@@ -1,0 +1,71 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sqr{
+    height: 100px;
+    width: 100px;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+.redSqr{
+    background-color: red;
+    position: relative;
+    top: 100px;
+    left: -50px;
+    animation-name: rotate1;
+}
+.blueSqr{
+    background-color: blue;
+    position: relative;
+    left: 50px;
+    animation-name: rotate2;
+}
+.greenSqr{
+    background-color: green;
+    position: relative;
+    left: -50px;
+    animation-name: rotate3;
+}
+.yellowSqr{
+    background-color: yellow;
+    position: relative;
+    left: 50px;
+    bottom: 100px;
+    animation-name: rotate4;
+}
+
+@keyframes rotate1{
+    from{transform: rotate(0deg);}
+    to{
+        transform: rotate(90deg);
+        left: -150px;
+    }
+}
+@keyframes rotate2{
+    from{transform: rotate(0deg);}
+    to{
+        transform: rotate(-90deg);
+        left: 150px;
+    }
+}
+@keyframes rotate3{
+    from{transform: rotate(0deg);}
+    to{
+        transform: rotate(-90deg);
+        left: -150px;
+    }
+}
+@keyframes rotate4{
+    from{transform: rotate(0deg);}
+    to{
+        transform: rotate(90deg);
+        left: 150px;
+    }
+}
