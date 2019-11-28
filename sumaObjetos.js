@@ -1,6 +1,8 @@
-/* it returns the result of sum all the value numbers of an object */
+/* it returns the result of sum all the value numbers of an object 
 
-/* you can try it with this examples (2) or run the test (npm test):
+you can try it with this examples (2) or run the test (npm test):
+
+################################
 
 let numObj = {
     a:1,
@@ -20,6 +22,9 @@ let numObj = {
 };
 
 let numObj2 = {a:1, b:2, c:3};
+
+################################
+
 */
 
 let sumObjects = (obj) => {

@@ -1,4 +1,24 @@
-// Variables
+/* 
+the app let the user to navegate throught the menu with the UP and DOWN keys
+
+if you want to test the code, insert this command lines in the console, it will create a new object menu which will be an instance from the MENU class
+
+################################
+
+let menu = new Menu();
+
+menu.addOption('susan');
+menu.addOption('pulsa aquí', () => {console.log('Y pasa esto')});
+menu.addOption('pepe');
+menu.addOption('susan');
+menu.addOption('pulsa aquí', () => {console.log('Y pasa esto')});
+menu.addOption('pepe');
+menu.build();
+
+################################
+
+*/
+
 let counter = 0;
 
 let elementSelected = (select) => {
@@ -6,7 +26,7 @@ let elementSelected = (select) => {
         let arrayOfElem = [...document.querySelectorAll('li')];
         arrayOfElem[select].style.backgroundColor = 'red';
     } catch (e) {
-        return
+        return console.log(e);
     };
 };
 
@@ -52,8 +72,7 @@ class Menu {
         this.arrayOfNodes.push(list);
         this.elements.forEach((elem) => this.ulNode.appendChild(elem));
         // this.ulNode.appendChild(liNode);
-        elementSelected(0);
-        
+        elementSelected(0); 
     };
 
     removeOption (index) {
@@ -76,11 +95,7 @@ class Menu {
 
     launchFunctionality () {
         this.arrayOfNodes[counter].executeFunction();
-        
-
     };
-
-    
 };
 
 
@@ -95,7 +110,5 @@ document.addEventListener('keydown', (e) => {
         menu.launchFunctionality();
     };
 });
-
-
 
 console.log('hola!');

@@ -1,4 +1,14 @@
-/* create sub arrays from the original one, each of one contains "N=size" elements, if still remains elements from the original one, it adds this elements at the end of the arrChunked in an small subArray */
+/* create sub arrays from the original one, each of one contains "N=size" elements, if still remains elements from the original one, it adds this elements at the end of the arrChunked in an small subArray 
+
+you can try it with this example (1) or run the test (npm test):
+
+################################
+
+chunk([1, 2, 3, 4, 5], 10);
+
+################################
+
+*/
 
 let chunk = (array, size) => {
   let arr = [...array];
@@ -11,7 +21,5 @@ let chunk = (array, size) => {
   
   return (arr[0]) ? arrChunked.concat([arr]) : arrChunked;
 }
-
-chunk([1, 2, 3, 4, 5], 10);
 
 module.exports = {chunk};
