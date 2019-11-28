@@ -1,0 +1,161 @@
+//Animation for the cubes to move. First animation opens and closes.Second allows the cubs to reotate inseide each
+other
+
+@import '_reset'; 
+#red,
+#green,
+#blue,
+#yellow {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+#g1{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+   top:50%;
+   left:40%;
+    background-color: plum;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-name: eternalrotate;
+
+}
+
+#g2{
+    position: relative;
+    width: 150px;
+    height: 150px;
+   top:13%;
+   left:13%;
+    background-color: aqua;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-name: eternalrotate2;
+
+}
+#g3{
+    position: relative;
+    width: 100px;
+    height: 100px;
+   top:16%;
+   left:16%;
+    background-color: wheat;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-name: eternalrotate3;
+}
+#red {
+
+    background: red;
+  
+    left: 40%;
+    animation-name: rotatered;
+
+
+}
+
+#green {
+    left: 40%;
+    top: 10%;
+    background-color: green;
+    animation-name: rotatered;
+}
+
+#blue {
+    background-color: blue;
+    left: 44%;
+    animation-name: rotateblue;
+}
+
+
+#yellow {
+    left: 44%;
+    top: 10%;
+    background-color: yellow;
+    animation-name: rotateblue;
+}
+
+@keyframes rotatered {
+    0% {
+        transform: rotate(0deg);
+        left: 40%;
+    }
+
+    50% {
+        transform: rotate(90deg);
+        left: 38%;
+    }
+
+    100% {
+        transform: rotate(0deg);
+        left: 40%;
+    }
+}
+
+@keyframes rotateblue {
+    0% {
+        transform: rotate(0deg);
+        left: 44%;
+    }
+
+    50% {
+        transform: rotate(-90deg);
+        left: 46%;
+    }
+
+    100% {
+        transform: rotate(0deg);
+        left: 44%;
+    }
+}
+
+@keyframes eternalrotate{
+    0% {
+        transform: rotate(0deg);
+    background-color:plum;}
+    10%{background-color: purple;}
+    35%{background-color:aqua;}
+    55%{background-color: coral;}
+    70%{background-color: crimson;}
+    90%{background-color: deeppink;}
+    100% {background-color:plum;
+        transform: rotate(360deg); }     
+    }
+
+    @keyframes eternalrotate2{
+        0% {
+            transform: rotate(0deg);
+        background-color:aqua;}
+        10%{background-color: tomato;}
+        35%{background-color:lightblue}
+        55%{background-color: orchid}
+        70%{background-color: bisque}
+        90%{background-color: salmon;}
+        100% {background-color:aqua;
+            transform: rotate(360deg); }     
+        }
+
+        @keyframes eternalrotate3{
+            0% {
+                transform: rotate(0deg);
+            background-color:wheat;}
+            10%{background-color: deeppink;}
+            35%{background-color:palevioletred;}
+            55%{background-color: blueviolet;}
+            70%{background-color: darkslategray;}
+            90%{background-color: gold;}
+            100% {background-color:wheat;
+                transform: rotate(360deg); }     
+            }
