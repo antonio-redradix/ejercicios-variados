@@ -1,0 +1,7 @@
+{
+  "presets": [
+    ["@babel/preset-env", { //configuracion para transformar JS. Generalmente preset-env
+      "useBuiltIns": "entry" //comprueba en fichero de entrada si hay polyfills-> para añadir las funciones nuevas que no soportan determinados navegadores --> mas lineas de codigo
+    }]
+  ]
+}

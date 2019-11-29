@@ -1,0 +1,77 @@
+//@import 'reset';
+#boxes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    left: 40%;
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    
+}
+.box{
+    width: 100px;
+    height: 100px;
+}
+#red{
+    @extend .box;
+    transform-origin: 0% 0%;
+    background-color: red;
+    animation-name: rotRed;
+    animation-duration: 2s;  
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes rotRed{
+    0%{transform: rotate(0deg);}
+    40%{transform: rotate(90deg);}
+    60%{transform: rotate(90deg);}
+    100%{transform: rotate(0deg);}
+}
+#yellow{
+    @extend .box;
+    background-color: yellow;
+    transform-origin: 100% 0%;
+    animation-name: rotYel;
+    animation-duration: 2s;  
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes rotYel{
+	0%{transform: rotate(0deg);}
+    40%{transform: rotate(-90deg);}
+    60%{transform: rotate(-90deg);}
+    100%{transform: rotate(0deg);}
+}
+#blue{
+    @extend .box;
+    background-color: blue;
+    transform-origin: 0% 100%;
+    animation-name: rotBlu;
+    animation-duration: 2s;  
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes rotBlu{
+    0%{transform: rotate(0deg);}
+    40%{transform: rotate(-90deg);}
+    60%{transform: rotate(-90deg);}
+    100%{transform: rotate(0deg);}
+}
+#green{
+    @extend .box;
+    background-color: green;
+    transform-origin: 100% 100%;
+    animation-name: rotGrn;
+    animation-duration: 2s;  
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    transition: initial;
+}
+@keyframes rotGrn{
+    0%{transform: rotate(0deg);}
+    40%{transform: rotate(90deg);}
+    60%{transform: rotate(90deg);}
+    100%{transform: rotate(0deg);}
+}
