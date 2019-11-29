@@ -1,0 +1,72 @@
+.text {
+    width: 30px;
+    height: 200px;
+    margin-top: 100px;
+    margin-left: 677px;
+    font-family: 'Arial';
+    font-size: 15px;
+    text-align: center;
+}
+
+.box1 {
+    position: absolute;
+    top: 20px;
+    left: 600px;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    animation: rotatered 4s linear infinite; 
+}
+@keyframes rotatered {
+    0%{transform: rotate(0deg)}
+    50%{transform: rotate(90deg); left: 550px;}
+    65%{transform: rotate(90deg); left: 550px;}
+    100%{transform: rotate(0deg)}
+}
+.box2 {
+    position: absolute;
+    top: 20px;
+    left: 700px;
+    background-color:yellow;
+    width: 100px;
+    height: 100px;
+    animation: rotateyellow 4s linear infinite ;
+}
+@keyframes rotateyellow {
+    0%{transform: rotate(0deg)}
+    50%{transform: rotate(-90deg); left: 750px;}
+    65%{transform: rotate(-90deg); left: 750px;}
+    100%{transform: rotate(0deg)}
+  }
+
+.box3 {
+    position: absolute;
+    top: 120px;
+    left: 600px;
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    animation: rotateblue 4s linear infinite;
+}
+@keyframes rotateblue {
+    0%{transform: rotate(0deg)}
+    50%{transform: rotate(-90deg); left: 550px;}
+    65%{transform: rotate(-90deg); left: 550px;}
+    100%{transform: rotate(0deg)}
+  }
+
+.box4 {
+    position: absolute;
+    top: 120px;
+    left: 700px;
+    background-color:green;
+    width: 100px;
+    height: 100px;
+    animation: rotategreen 4s linear infinite;
+}
+@keyframes rotategreen {
+    0%{transform: rotate(0deg)}
+    50%{transform: rotate(90deg); left: 750px;}
+    65%{transform: rotate(90deg); left:750px;}
+    100%{transform: rotate(0deg)}
+  }
