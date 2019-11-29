@@ -1,0 +1,63 @@
+@keyframes rot1{
+    0% {transform: rotate(0deg);}
+    50%{transform:rotate(90deg);left:150px;}
+    75%{transform:rotate(90deg);left:150px;}
+    100% {transform: rotate(0deg);}
+}
+@keyframes rot2{
+     0%{transform: rotate(90deg);}
+    50%{transform:rotate(0deg);left:450px;}
+    75%{transform:rotate(0deg);left:450px;}
+    100%{transform: rotate(90deg);}
+       
+}
+
+@keyframes rot3{
+    0%{transform: rotate(0deg);}
+    50%{transform:rotate(-90deg);left:150px;}
+    75%{transform:rotate(-90deg);left:150px;}
+    100%{transform: rotate(0deg);}
+}
+
+@keyframes rot4{
+    0%{transform: rotate(-90deg);}
+    50%{transform:rotate(0deg);left:450px;}
+    75%{transform:rotate(0deg);left:450px;}
+    100%{transform: rotate(-90deg);}
+}
+#c1{
+height: 100px;
+width: 100px;
+background-color: red;
+position:absolute;
+animation: rot1 2s infinite;
+left:250px;
+top:40px;
+}
+#c2{
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    position:absolute;
+    animation:rot2 2s infinite;
+    left:350px;
+    top:40px;
+}
+#c3{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    animation: rot3 2s infinite;
+    position:absolute;
+    left:250px;
+    top:140px;
+}
+#c4{
+     height: 100px;
+     width: 100px;
+     background-color: green;
+     position:absolute;
+     animation: rot4 2s infinite;
+     left:350px;
+     top:140px;
+ }
