@@ -1,0 +1,95 @@
+body {
+    margin: 0px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    display: flex;
+    flex-flow: row wrap;
+    width: 200px;
+    height: 200px;
+}
+
+.text{
+    color: black;
+    font-size: 20px;
+}
+
+.red{
+    transform-origin: 0% 0%;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    animation-name: rotateRed;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+.yellow{
+    transform-origin: 100% 0%;
+    display: flex;
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    animation-name: rotateYellow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+.blue{
+    transform-origin: 0% 100%;
+    display: flex;
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    animation-name: rotateBlue;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+.green{
+    transform-origin: 100% 100%;
+    display: flex;
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    animation-name: rotateGreen;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+@keyframes rotateRed {
+    0% {transform: rotate(0deg);}
+    45% {transform: rotate(90deg);}
+    55% {transform: rotate(90deg);}
+    100% {transform: rotate(0deg);}
+}
+
+@keyframes rotateBlue {
+    0% {transform: rotate(0deg);}
+    45% {transform: rotate(-90deg);}
+    55% {transform: rotate(-90deg);}
+    100% {transform: rotate(0deg);}
+}
+
+@keyframes rotateYellow {
+    0% {transform: rotate(0deg);}
+    45% {transform: rotate(-90deg);}
+    55% {transform: rotate(-90deg);}
+    100% {transform: rotate(0deg);}
+}
+
+@keyframes rotateGreen {
+    0% {transform: rotate(0deg);}
+    45% {transform: rotate(90deg);}
+    55% {transform: rotate(90deg);}
+    100% {transform: rotate(0deg);}
+}
