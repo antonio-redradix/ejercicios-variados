@@ -1,0 +1,25 @@
+.centered{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.figure--centered{
+    @extend.centered
+
+    &__image--centered{
+        @extend.centered 
+        width: 200px;
+        height: 200px;
+    }
+
+    &__caption{
+        font-size: 12px;
+    }
+
+    &__caption--centered{
+        @extend.centered 
+        font-size: 12px;
+    }
+}

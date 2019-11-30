@@ -1,0 +1,79 @@
+
+body{
+  position: relative;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+#cuborojo{
+  left: 500px;
+  top: 200px;
+  position: absolute;
+  background-color: red;
+  width: 50px;
+  height:50px;
+  animation: rojo 2s linear infinite;
+}
+
+@keyframes rojo{
+  0% {transform: rotate(0deg)}
+  50% {transform: rotate(90deg); left:450px;}
+  65% {transform: rotate(90deg); left:450px;}
+  100% {transform: rotate(0deg)}
+}
+
+#cuboamarillo{
+  left: 550px;
+  top: 200px;
+  position: absolute;
+  background-color: yellow;
+  width: 50px;
+  height:50px;
+  animation: amarillo 2s linear infinite;
+}
+
+@keyframes amarillo{
+  0% {transform: rotate(0deg)}
+  50% {transform: rotate(-90deg); left:600px;}
+  65% {transform: rotate(-90deg); left:600px;}
+  100% {transform: rotate(0deg)}
+}
+
+#cuboazul{
+  left: 500px;
+  top: 250px;
+  position: absolute;
+  background-color: blue;
+  width: 50px;
+  height:50px;
+  animation: azul 2s linear infinite;
+}
+
+@keyframes azul{
+  0% {transform: rotate(0deg)}
+  50% {transform: rotate(-90deg); left:450px;}
+  65% {transform: rotate(-90deg); left:450px;}
+  100% {transform: rotate(0deg)}
+}
+
+#cuboverde{
+  left: 550px;
+  top: 250px;
+  position: absolute;
+  background-color: green;
+  width: 50px;
+  height:50px;
+  animation: verde 2s linear infinite;
+}
+
+@keyframes verde {
+  0% {transform: rotate(0deg)}
+  50% {transform: rotate(90deg); left:600px;}
+  65% {transform: rotate(90deg); left:600px;}
+  100% {transform: rotate(0deg)}
+}
+
+
+    
+
