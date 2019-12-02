@@ -35,6 +35,14 @@ console.log(strings.map((x) => {
 }))
 
 
+console.log(strings.map(x => {
+    let result = x.split(' ')
+    let aux = result.map(word => word.charAt(0))
+    return aux.join('')
+})) 
+
+
+
 let people = [{
     name: "Alberto"
 }, {
