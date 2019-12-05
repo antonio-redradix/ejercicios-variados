@@ -1,4 +1,4 @@
-# Ejercicio comisaría Angular
+# Ejercicio variados
 
 ## sumaObjetos
 
