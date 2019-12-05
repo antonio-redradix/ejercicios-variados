@@ -30,41 +30,41 @@
 
     Varias transformaciones mediante map, filter y reduce
 
-Realiza las siguientes transformaciones utilizando map
+	Realiza las siguientes transformaciones utilizando map
 
--   [8, 12, 20] -> [4, 6, 10]
-    
--   [1, 7, 50] -> [“1”, “7”, “50”]
-    
--   [-2, 5, 15, -7, -8] -> [“-”, “+”, “+”, “-”, “-”]
-    
--   [{name: “Alberto”}, {name: “Fran”}]  -> [“Alberto”, ”Fran”]
-    
--   [“lorem ipsum dolor”, “hello world”]  -> [“lid”, “hw”]
-    
--   [[1, 2], [34, 20, 5], [11], [2, 4]]  -> [3, 59, 11, 6]
+	-   [8, 12, 20] -> [4, 6, 10]
+
+	-   [1, 7, 50] -> [“1”, “7”, “50”]
+
+	-   [-2, 5, 15, -7, -8] -> [“-”, “+”, “+”, “-”, “-”]
+
+	-   [{name: “Alberto”}, {name: “Fran”}]  -> [“Alberto”, ”Fran”]
+
+	-   [“lorem ipsum dolor”, “hello world”]  -> [“lid”, “hw”]
+
+	-   [[1, 2], [34, 20, 5], [11], [2, 4]]  -> [3, 59, 11, 6]
 
 
-Realiza las siguientes transformaciones utilizando filter
+	Realiza las siguientes transformaciones utilizando filter
 
-Dado un array de números
+	Dado un array de números
 
--   Conserva los números impares
+	-   Conserva los números impares
 
-Dado un array de objetos
--   Conserva los objetos que tengan una propiedad important:true
+	Dado un array de objetos
+	-   Conserva los objetos que tengan una propiedad important:true
 
-    
 
-Utiliza reduce para
 
--   Calcular la resta de todos los números de un array
-    
--   Concatenar todas las strings de un array
-    
--   Calcular la suma de todos los números de un array (excepto los negativos)
-    
--   Encontrar el máximo de un array de números
+	Utiliza reduce para
+
+	-   Calcular la resta de todos los números de un array
+
+	-   Concatenar todas las strings de un array
+
+	-   Calcular la suma de todos los números de un array (excepto los negativos)
+
+	-   Encontrar el máximo de un array de números
 
 
 ## ejerciciosRegexp
