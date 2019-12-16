@@ -1,29 +1,43 @@
-class Shape{
-    constructor(width,heigth){
-        this.width=width
-        this.heigth=heigth
-    }
-    getArea(){}
+let busqueda = document.querySelector("input")
+let buscar=document.querySelector("button")
+let image=document.createElement("img")
+let errorMsg=document.createElement("p")
+buscar.onclick=function(){
+    busqueda.value
+    fetch(" https://pokeapi.co/api/v2/pokemon/"+busqueda.value+"/")
+    .then(response => {
+    if(response.status===200){
+            console.log(response.status)
+            response.json()
+                .then(data => {
+                console.log(data)
+                function imprimir(){
+                let foto = Object.values(data.sprites)
+                    for( let fotos of foto){
+                    if(fotos!=null){
+                        if(!fotos.match("back")){
+                    
+                    image.setAttribute("src",fotos)
+                    frame.append(image)}}
+                        }
+                    }
+                
+                imprimir()
+            })
+        }
+        else{
+            function errFound(){
+                errorMsg.innerHTML="Ha habido un error. Comprueba que tu pokemon está bien escrito"
+                document.body.append(errorMsg)
+            }
+            errFound()
+        }
+    })
 }
-class Rect extends Shape{
-    constructor(width,heigth){
-        super(width,heigth)
-    }
-    getArea(Rect){
-        let area=this.width*this.heigth
-        return area
-    }
-}
-class Triangle extends Shape{
-    constructor(width,heigth){
-        super(width,heigth)
-    }
-    getArea(Triangle){
-        let area=this.width*this.heigth/2
-        return area
-    }
-}
-let rect = new Rect(10,20)
-console.log(rect.getArea())
-let triangle = new Triangle(20,10)
-console.log(triangle.getArea())
+
+                
+                
+            
+            
+    
+
